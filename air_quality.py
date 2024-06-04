@@ -5,7 +5,7 @@ import datetime
 
 st.header('Air Quality Dashboard :sparkle:')
 
-df = pd.read_csv(r'C:\Users\ACER\Documents\Python\streamlit_dashboard\air_quality_dataset.csv')
+df = pd.read_csv(r'https://raw.githubusercontent.com/bryanherdianto/air_quality_dashboard/main/air_quality_dataset.csv')
 
 st.subheader('Facts')
  
