@@ -33,6 +33,9 @@ ax.bar(
     so2_summary_df['SO2'],
     color="#90CAF9"
 )
+ax.set_xlabel("Nama Stasiun")
+ax.set_ylabel("Konsentrasi SO2")
+ax.set_title("Konsentrasi SO2 pada Stasiun")
 ax.tick_params(axis='y', labelsize=20)
 ax.tick_params(axis='x', labelsize=15, rotation=90)
  
@@ -65,8 +68,12 @@ ax.plot(
     average_so2_by_year,
     marker='o', 
     linewidth=2,
-    color="#90CAF9"
+    color="#90CAF9",
 )
+ax.grid(visible=True)
+ax.set_xlabel("Tahun")
+ax.set_ylabel("Konsentrasi SO2")
+ax.set_title("Perkembangan Konsentrasi SO2 per Tahun di Statiun Aotizhongxin")
 ax.tick_params(axis='y', labelsize=20)
 ax.tick_params(axis='x', labelsize=15)
  
